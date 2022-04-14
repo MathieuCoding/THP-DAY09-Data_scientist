@@ -1,0 +1,1 @@
+This is a ruby training on hash and arrays.
