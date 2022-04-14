@@ -23,7 +23,7 @@ def lowest_value
 end
 
 def below_6k
-    puts "All cryptos with a value below 6k are : #{combined_crypto.select.to_a {|k| k < 6000}}"
+    puts "All cryptos with a value below 6k are : #{combined_crypto.select {|m,n| n.to_f < 6000.0}}"
 end
 
 def perform
@@ -32,7 +32,7 @@ def perform
     combined_crypto
     highest_value
     lowest_value
-    #below_6k
+    below_6k
 end
 
 perform
