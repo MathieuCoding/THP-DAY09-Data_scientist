@@ -15,11 +15,11 @@ def combined_crypto
 end
 
 def highest_value
-    puts "The highest value is #{combined_crypto.max_by{|i| i.length}}"
+    puts "The highest value is #{combined_crypto.max_by{|i,j| j.to_f}}"
 end
 
 def lowest_value
-    puts "The lowest value is #{combined_crypto.min_by{|j| j.min}}"
+    puts "The lowest value is #{combined_crypto.min_by{|k,l| l.to_f}}"
 end
 
 def below_6k
@@ -32,7 +32,7 @@ def perform
     combined_crypto
     highest_value
     lowest_value
-    below_6k
+    #below_6k
 end
 
 perform
