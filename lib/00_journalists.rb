@@ -20,7 +20,7 @@ def uppercase
 end
 
 def alphabetical_order
-    puts handle.sort 
+    puts handle.sort_by(&:downcase) 
 end
 
 def length_order
@@ -28,7 +28,7 @@ def length_order
 end
 
 def epenser
-    puts "In this array, @epenser is position #{handle.index "@epenser"}"
+    puts "In this array, @epenser is position #{handle.index"@epenser"}"
 end
 
 def sorted_by_length
@@ -49,7 +49,7 @@ def perform
     shortest_handle
     five_character
     uppercase
-    #alphabetical_order
+    alphabetical_order
     #length_order
     epenser
     sorted_by_length
